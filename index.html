@@ -22,10 +22,12 @@
       width: 66vh;
     }
 
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      width: 100%;
-    }
+    @media screen and (max-width: 650px) {
+      .wrapper {
+        width: 80%;
+        display: block;
+      }
+}
 
     .button {
       border: none;
@@ -34,6 +36,7 @@
       padding: 8px;
       color: rgb(0, 0, 0);
       background-color: #ffffff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       text-align: center;
       cursor: pointer;
       width: 100%;
@@ -41,13 +44,12 @@
   </style>
 </head>
 <html>
-    <img src="catgrin.png">
     <div class="wrapper">
-      <div class="card">
-        <a href="https://koralezy.github.io/fn/" target="_blank"><button class="button">
-          <p class="buttontop">Click me to see the GREATEST Fortnite squad EVER!</p>
-          <img src="fngreats-ss.png" style="width: 100%">
-        </button></a>
+      <img src="catgrin.png">
+      <a href="https://koralezy.github.io/fn/" target="_blank"><button class="button">
+        <p class="buttontop">Click me to see the GREATEST Fortnite squad EVER!</p>
+        <img src="fngreats-ss.png" style="width: 100%">
+      </button></a>
       </div>
     </div>
 </html>
